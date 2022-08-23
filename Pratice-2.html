@@ -1,0 +1,75 @@
+
+
+<script>
+/*-------------------------------------------------------------------*/
+
+console.log("");
+
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+console.log("檢查瀏覽器是否為 IE 瀏覽器");
+if(! + [1,]){
+	console.log("=> 此瀏覽器為 IE 瀏覽器");
+}else{
+	console.log("=> 此瀏覽器不為 IE 瀏覽器");
+}
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+console.log("將日期直接轉換為數值");
+console.log(+new Date());
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+console.log("將日期直接轉換為數值");
+console.log(+new Date());
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+console.log("使用 !! 可以將值轉換成布林值");
+console.log(!!'hi');
+console.log(!!'');
+console.log(!!1);
+console.log(!!{});
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+/* 需搭配
+<body onkeypress="showChar(event);">
+</body>
+*/
+
+console.log("檢查按下的按鈕");
+function showChar(e){
+  alert(
+    "Key Pressed: " + String.fromCharCode(e.charCode) + "\n"
+    + "charCode: " + e.charCode + "\n"
+    + "SHIFT key pressed: " + e.shiftKey + "\n"
+    + "ALT key pressed: " + e.altKey + "\n"
+  );
+}
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+console.log("");
+
+function isKeyPressed(event){
+	alert("SHIFT key pressed: " + e.shiftKey + "\n");
+}
+
+
+console.log("");
+
+/*-------------------------------------------------------------------*/
+
+</script>
+
+<body onkeypress="showChar(event);">
+</body>
