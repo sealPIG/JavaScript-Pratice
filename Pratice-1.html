@@ -1,0 +1,684 @@
+<script>
+/*-------------------------------------------------------------------*/
+	//in-line comments
+	//註解可以這樣打
+	/*
+	or you can in-line the comment like this
+	你也可以這樣打
+	跟 C 一樣的方式
+	*/
+/*-------------------------------------------------------------------*/
+	console.log("第一部份：是否加分號");
+
+	console.log("hellow world")
+	//到網頁案 F12 然後點擊 console 就會顯示這裡的東西
+
+	console.log("有分號有差嗎")
+	console.log("我覺得沒有");		//有沒有分號都是沒差的
+									//但是為了在 C 不要忘記分號我還是會打
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二部份：var 跟 let");
+
+	/*
+	Data Types =>
+	undefine, null, string, symbol, number, object
+	*/
+
+	//var = variables
+	var myName = "Beau";		//用在全域
+	myName = 8;
+	console.log(myName);
+	
+	let ourName = "freeCodeCamp";		//用 var 就好了
+	console.log(ourName);
+
+	const pi = 3.1415926;		//跟 C 的 const 一樣意思
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第三部份：console 用法");
+
+	//使用 console.log 可以在 console 裡顯示變數或是字串
+	//跟 C 的 printf 類似
+
+	console.log(myName);
+	myName = "i dont even know";
+
+	console.log(myName);
+
+	//自己發現了新大陸 console 也可以這樣用
+	//記得要加上 ","
+	var newland = 5;
+	console.log("newland = ", newland);
+
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第四部份：基礎四則運算");
+
+	var a = 10;
+	var b = 5;
+	var c = "hey";
+
+	console.log("a + b = ",a + b);
+	console.log(c + " you");
+	//這一些用法都跟 C 的一樣
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第五部份：命名規則");
+
+	//定義名稱的方式跟 C 一樣
+	//大小寫有區別
+
+	var MYSPECIAL = 1;
+	var myspecial = 2;
+
+	console.log("MYSPECIAL = ", MYSPECIAL);
+	console.log("myspecial = ", myspecial);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第六部份：四則運算");
+
+	//+ - * / % 的用法跟 C 的一樣
+	//++ -- += -= *= /= 用法也一樣
+
+	var a = 11;
+	var b = 2;
+
+	console.log("a + b = ", a + b);
+	console.log("a - b = ", a - b);
+	console.log("a * b = ", a * b);
+	console.log("a / b = ", a / b);
+	console.log("a % b = ", a % b);
+	console.log("a += 5 = ", a += 5);
+	console.log("a -= 5 = ", a -= 5);
+	console.log("a *= 5 = ", a *= 5);
+	console.log("a /= 5 = ", a /= 5);
+
+	console.log("");
+
+	console.log("++a = ", ++a);
+	a++;
+	console.log("a++ = ", a);
+
+	console.log("");
+
+	console.log("--a = ", --a);
+	a--;
+	console.log("a-- = ", a);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第七部分：var 使用");
+
+	//完整定義
+	//var 全域 區域 都可以使用的變數
+	//let 是甚麼不重要 用 var 就好了
+	//const 宣告一個只可讀取的不可變常數
+
+	//所以 var 可以宣告不管是 string, number, float, double, char
+	var a = 0.001;
+	var b = 999.464;
+
+	console.log("a = ", a);
+	console.log("b = ", b);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第八部分：基礎 string");
+
+	// '' "" 都一樣代表 string
+
+	var a = "hi how are you";
+	var b = 'hi how are you';
+
+	console.log(a);
+	console.log(b);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第九部分：進階 string");
+
+	// \" 可以在字串裡顯示 "
+	//或者是 '' 可以讓 "" 一起顯示
+	//又或是 `` 可以讓 "" '' 一起顯示
+	//打 ~ 不要按 shift 就可以打出 ``
+
+	console.log("像這個\"樣子");
+	console.log('或是"這個樣子');
+	console.log(`或是" '這個樣子`);
+	console.log('這樣可以直接複製網址https://www.youtube.com/watch?v=PkZNo7MFNFg&ab_channel=freeCodeCamp.org')
+	//如果網址裡有 "" 的時候 '' 很好用
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十部分：\\sth 用法");
+	/*
+	Code OUTPUT =>
+	\' print '
+	\" print "
+	\\ print \
+	\n newline
+	\t tab
+	\r carriage return 回車
+	\b backspace 空白鍵
+	\f form feed 饋頁
+	*/
+
+	console.log("first line \nsecond line");
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十一部分：string 相加");
+
+	//可以做字串相加
+
+	var Firststr = "hi i am seal.\n";
+	var Secondstr = "and this is my JavaScript.";
+
+	console.log(Firststr + Secondstr);
+
+	//也可以用 += 來做相加
+
+	var Thirdstr = "if there is nothing wrong.\n";
+	var Fourthstr = "please get the fuck out of here.";
+	Thirdstr += Fourthstr;
+
+	console.log(Thirdstr);
+
+	//也可以這樣
+
+	Firststr += "here we go again.\n" + Thirdstr;
+
+	console.log(Firststr);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十二部分：計算字串長度");
+
+	//計算字串長度
+
+	var countingstr = "this is the string to be count.";
+	var countinglength = 0;
+	countinglength = countingstr.length;		//加上 .length 就可以計算字串長度
+
+	console.log(countinglength);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十三部分：陣列 計算陣列長度 跟 擷取字串");
+
+	//取得字串中的某一個字母
+
+	var CutFirststr = "";
+	var Firststr = "this is Firststr";
+	CutFirststr = Firststr[3];		//跟陣列一樣 0 為開頭
+
+	console.log(CutFirststr);
+
+	//如果要找尋字串的最後一個字 可以用 .length - 1
+
+	CutFirststr = Firststr[Firststr.length - 1];
+
+	console.log(CutFirststr);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十四部分：基礎 function");
+
+	//初階 function 示範
+
+	function PutWorldTogether(Noun, Adj) {		//帶入的變數宣告記得加 ","
+		var result = "";
+
+		result = "The " + Noun + "is too " + Adj + "for me.";
+
+		return result;
+	}
+
+	console.log(PutWorldTogether("apple ","sour "));		//這裡也記得加 ","
+	console.log(PutWorldTogether("dick ","big "));
+
+	//基本上跟 C 差不多
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十五部分：陣列 一維陣列進階");
+
+	//陣列
+	//可以儲存任何型態 太神拉
+
+	var FirstArr = ["hi", 24 ,3.1415926];
+
+	console.log("FirstArr[ 0 ] = ", FirstArr[0]);
+	console.log("FirstArr[ 1 ] = ", FirstArr[1]);
+	console.log("FirstArr[ 2 ] = ", FirstArr[2]);
+
+	FirstArr[1] = "I";
+	FirstArr[2] = "am";
+	FirstArr[3] = "seal";		//還可以擴充陣列 	(我也不知道這是不是正確的)
+
+	//無師自通 水拉
+	for (var i = 0; i <= FirstArr.length - 1; i++) {
+		console.log("FirstArr[", i, "] = ", FirstArr[i]);
+	}
+
+	//for 的用法跟 C 的用法一模一樣
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十六部分：二維陣列");
+
+	//二維陣列
+
+	var SecondArr = [["first thing", 5], ["second thing", 10], ["third thing", 15]];
+
+	for (var i = 0; i <= SecondArr.length - 1; i++) {
+		console.log(SecondArr[i][0], SecondArr[i][1]);
+	}
+
+	console.log(SecondArr.length);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十七部分：push function");
+
+	//push function
+
+	var ThirdArr = [0, 1, 2];
+	ThirdArr.push(3, 4, 5);
+
+	for (var i = 0; i <= ThirdArr.length - 1; i++) {
+		console.log("ThirdArr[", i, "] = ", ThirdArr[i]);
+	}
+
+	console.log("");
+
+	//也可以插入一個陣列
+
+	ThirdArr.push([6, 7, 8]);
+
+	for (var i = 0; i <= 2; i++) {
+		console.log("ThirdArr[6][", i, "] = ", ThirdArr[6][i]);
+	}
+
+	console.log("");
+
+	//如果直接印就會變這樣
+
+	for (var i = 0; i <= ThirdArr.length - 1; i++) {
+		console.log("ThirdArr[", i, "] = ", ThirdArr[i]);
+	}
+
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十八部分：unshift function");
+
+	//unshift function
+
+	var FourthArr = [0, 1, 2];
+	FourthArr.unshift(3, 4, 5);
+
+	for (var i = 0; i <= FourthArr.length - 1; i++) {
+		console.log("FourthArr[", i, "] = ", FourthArr[i]);
+	}
+
+	console.log("");
+
+	//也可以插入一個陣列
+
+	FourthArr.unshift([6, 7, 8]);
+
+	for (var i = 0; i <= 2; i++) {
+		console.log("FourthArr[0][", i, "] = ", FourthArr[0][i]);
+	}
+
+	console.log("");
+
+	//如果直接印就會變這樣
+
+	for (var i = 0; i <= FourthArr.length - 1; i++) {
+		console.log("FourthArr[", i, "] = ", FourthArr[i]);
+	}
+
+	//簡單來說 push 是從後面推 unshift 是從前面推
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第十九部分：pop function");
+
+	//pop function
+
+	var FifthArr = [0, 1, 2, 3, 4];
+	var Fifthpop = FifthArr.pop();
+
+	console.log(Fifthpop);
+	console.log(FifthArr);
+
+	//也可以 pop 一個二維陣列
+
+	FifthArr = [["first", 1], ["second", 2], ["third", 3], ["fourth", 4]];
+	Fifthpop = FifthArr.pop();
+
+	console.log(Fifthpop);
+	console.log(FifthArr);
+	
+	//pop 是把原陣列的最後一個提出來到變數然後刪除原陣列裡的東西
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十部分：shift function");
+
+	//shift function
+
+	var SixthArr = [0, 1, 2, 3, 4];
+	var Sixthshift = SixthArr.shift();
+
+	console.log(Sixthshift);
+	console.log(SixthArr);
+
+	//也可以 shift 一個二維陣列
+
+	SixthArr = [["first", 1], ["second", 2], ["third", 3], ["fourth", 4]];
+	Sixthshift = SixthArr.shift();
+
+	console.log(Sixthshift);
+	console.log(SixthArr);
+
+	//簡單來說就是跟 pop 一樣
+	//只是 pop 是取最後 shift 是取最前
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十一部分：push unshift pop shift function");
+
+	//綜合前面的 push unshift pop shift
+
+	var SeventhArr = ["first", "second", "third"];
+	var SeventhUp = "zero";
+	var SeventhDown = "";
+
+	SeventhDown = SeventhArr.pop();
+	SeventhArr.push(SeventhUp);
+	console.log(SeventhDown);
+	console.log(SeventhArr);
+
+	SeventhDown = SeventhArr.shift();
+	SeventhArr.unshift(SeventhUp);
+	console.log(SeventhDown);
+	console.log(SeventhArr);
+
+	//pop push 都是從後面
+	//shift unshift 都是從前面
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十二部分：if");
+
+	function iftest (sth){
+
+		if(sth == 1|| sth == "a"|| sth == "A"){ return "first"; }
+		else if(sth == 2||sth == "b"||sth == "B"){ return "second"; }
+		else{ return "none"; }
+
+	}	//function
+
+	console.log(iftest("a"));
+	console.log(iftest(2));
+	console.log(iftest("c"));
+
+	//跟 C  一樣
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十三部分：switch");
+
+	function switchtest (sth){
+
+		switch (sth) {
+			case 1:
+			case "A":
+			case "a":
+				return "first";
+				break;
+			case 2:
+			case "B":
+			case "b":
+				return "second";
+				break;
+			default:
+				return "none";
+				break;
+		}	//switch
+
+	}	//function
+
+	console.log(switchtest("a"));
+	console.log(switchtest(2));
+	console.log(switchtest("c"));
+
+	//也跟 C 一模一樣
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十四部分：return 回傳布林值");
+
+		function trueorfalse(a,b){
+
+			return a < b;
+
+		}//function
+
+		console.log(trueorfalse(5, 10));
+		console.log(trueorfalse(10, 5));
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十五部分：初步認識 object");
+
+	var myCat = {	//注意!! 裡面有兩個 legs 分別為有引號跟沒引號
+
+		"name" : "little red",
+		"legs" : 89,
+		"tails" : 1,
+		"friends" : ["father", "none"],	//可為陣列
+		"male" : true 	//可為布林值
+		//legs : 4
+
+	};
+
+	//當前面的目標沒有引號 使用 [""] 取值的時候會跑出 error
+	//但是可以用 sth.sth 取到
+
+	console.log("用 sth.sth 取值");
+
+	var legsValue = myCat.legs;	//他會取最後一個 legs 輸出
+	var tailsValue = myCat.tails;
+	var nameValue = myCat.name;
+	var friendsValue = myCat.friends;
+	console.log(legsValue);
+	console.log(tailsValue);
+	console.log(nameValue);
+	console.log(friendsValue);
+
+	console.log("用 [\"\"] 取值");
+
+	legsValue = myCat["legs"];
+	tailsValue = myCat['tails'];
+	nameValue = myCat["name"];
+	friendsValue = myCat['friends'];
+
+	console.log(legsValue);
+	console.log(tailsValue);
+	console.log(nameValue);
+	console.log(friendsValue);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十六部分：object 初步使用");
+
+	var FirstObject = {
+
+		0 : "NONE",
+		5 : "HALF",
+		10 : "WHOLE"
+
+	};
+
+	var noneValue = FirstObject[0];
+	var halfValue = FirstObject[5];
+	var wholeValue = FirstObject[10];
+
+	console.log(noneValue);
+	console.log(halfValue);
+	console.log(wholeValue);
+
+	//簡單來說 他可以把 "" 指向字串或數字
+	//也可以把數字指向 ""
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十七部分：更新 object 裡的值");
+
+	var SecondObject = {
+
+		"name" : "little red",
+		"legs" : 4,
+		"tails" : 1,
+		"friends" : "none"
+
+	};
+
+	console.log(SecondObject.name);
+	SecondObject.name = "酷企鵝";
+	console.log(SecondObject.name);
+
+	console.log(SecondObject.legs);
+	SecondObject["legs"] = 8;
+	console.log(SecondObject["legs"]);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十八部分：新增 object 裡的東東");
+
+	var ThirdObject = {
+
+		"name" : "little red",
+		"legs" : 4,
+		"tails" : 1,
+		"friends" : "none"
+
+	};
+
+	ThirdObject.eyes = 2;
+	console.log(ThirdObject["eyes"]);
+
+	ThirdObject["ears"] = 2;
+	console.log(ThirdObject["ears"]);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第二十九部分 : 刪除 object 裡的東東");
+
+	var FourthObject = {
+
+		"name" : "little red",
+		"legs" : 4,
+		"tails" : 1,
+		"friends" : "none"
+
+	};
+
+	delete FourthObject.name;
+	delete FourthObject["legs"];
+
+	console.log(FourthObject.name);
+	console.log(FourthObject["legs"]);
+
+	//undefine 就代表他被刪了
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第三十部分 : object 跟 switch");
+
+	function switchlookup(sth){
+
+		var FifthObject = {
+
+			"first" : 1,
+			"second" : 2,
+			"third" : 3,
+			"fourth" : 4,
+			"fifth" : 5
+
+		};
+
+		if(FifthObject.hasOwnProperty(sth)){	//防呆機制
+			return FifthObject[sth];				//hasOwonProperty 如果有值 = true, esle = false
+		}	//if
+		else{
+			return "ERROR";
+		}
+
+	}	//function
+
+	console.log(switchlookup("first"));
+	console.log(switchlookup("fifth"));
+	console.log(switchlookup("sixth"));
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第三十一部分 : 深度 object");
+
+	var SixthObject = {
+		"car" : {
+			"inside" : {
+				"sites" : "four",
+				"boxes" : "ten"
+			},	//"inside"
+			"outside" : {
+				"glasses" : "eight",
+				"gearboxes" : "one"
+			}	//outside
+		}	//"car"
+	};
+
+	console.log(SixthObject.car.inside.sites);
+	console.log(SixthObject.car.outside.gearboxes);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+	console.log("第三十二部分 : 深度 object");
+
+	var SeventhObject = {
+		"car" : {
+			"inside" : {
+				"sites" : "four",
+				"boxes" : "ten"
+			},	//"inside"
+			"outside" : {
+				"glasses" : "eight",
+				"gearboxes" : "one"
+			}	//outside
+		}	//"car"
+	};
+
+	delete SeventhObject.car.inside.boxes;
+	delete SeventhObject.car.outside.glasses;
+
+	console.log(SeventhObject.car.inside.boxes);
+	console.log(SeventhObject.car.outside.glasses);
+
+	SeventhObject.car.outside.glasses = "eleven";
+	SeventhObject.car.inside.boxes = "a lot";
+
+	console.log(SeventhObject.car.inside.boxes);
+	console.log(SeventhObject.car.outside.glasses);
+
+	console.log("");
+/*-------------------------------------------------------------------*/
+</script>
